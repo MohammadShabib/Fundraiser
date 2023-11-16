@@ -1,26 +1,28 @@
 import './App.css'
-import TotalRaised from "./components/TotalRaised.jsx";
-import Slots from "./components/Slots.jsx";
+import MainDashboard from "./components/organism/MainDashboard.jsx";
+import Slots from "./components/organism/Slots.jsx";
 import {MoneyRaisedProvider} from "./context/MoneyRaisedProvider.jsx";
-import {Col, Layout, Row} from "antd";
+import {Col, Row} from "antd";
 import {Content} from "antd/es/layout/layout.js";
 
-function App() {
+function App()
+{
     return (
-        <MoneyRaisedProvider >
+        <MoneyRaisedProvider>
             <Content>
-                <Row >
+                <Row style={{marginBottom: '5px'}}>
                     <Col span={24}>
-                        <TotalRaised />
+                        <MainDashboard/>
                     </Col>
                 </Row>
                 <Row>
                     <Col span={24}>
-                        <Slots />
+                        <Slots/>
                     </Col>
                 </Row>
             </Content>
         </MoneyRaisedProvider>
     );
 }
+
 export default App

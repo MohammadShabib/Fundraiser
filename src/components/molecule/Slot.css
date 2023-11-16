@@ -1,0 +1,17 @@
+.slot {
+    transition: all 0.3s;
+}
+
+.slot:hover {
+    margin: 10px; /* Increased horizontal margin on both sides */
+
+    transform: scale(1.15) translateY(30px); /* Scale and move down */
+    background-color: #595959;
+    z-index: 5; /* Higher z-index when hovered */
+}
+
+
+
+.slot-container:hover .slot {
+    margin: 5px 10px; /* Increased margin when any slot is hovered */
+}
