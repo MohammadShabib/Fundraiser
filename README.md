@@ -11,5 +11,5 @@
 </h1>
 
 <p align="center">
-  <img src="readme/Iphone.png" alt="iPhone View">
+  <img src="readme/IPhone.png" alt="iPhone View">
 </p>
